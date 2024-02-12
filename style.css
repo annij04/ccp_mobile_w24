@@ -29,7 +29,12 @@ nav ul li a {
 nav ul li a:hover {
     background-color: transparent;
     color: grey;
-    text-decoration: dotted;
+}
+
+.active-page {
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: underline;
 }
 
 .skip-main {
@@ -55,7 +60,7 @@ nav ul li a:hover {
     border: 5px solid #8A3528;
     padding: 15px;
 
-  }
+}
 
 
 .item img, video {
