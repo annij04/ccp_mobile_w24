@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Travel</title>
 </head>
 <body>
-    <a href="#skip">Skip to Main Content</a>
+    <a class="skip-main" href="#skip">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
                 <li><a href = "recipe.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
+                <li><a href = "travel.html" class="active-page">Travel</a></li>
             </ul>
         </nav>
-        <h1>Week Two discussion</h1>
-    </header>
-    <main id = "skip"> 
         <h1>Travel</h1>
-        <div>
-            <h2>Pelosi</h2>
+    </header>
+
+    <main id = "skip"> 
+        <div class="grid-container"> 
+            <div class="item">
+                <h2>Pelosi</h2>
             <img src="images/colosseum-rome.gif" width = "400" alt="colosseum-rome">
             <img src="images/colosseum-rome.jpg" width = "400" alt="colosseum-rome">
             <h3>Geographical Location: Europe</h3>
@@ -39,9 +41,9 @@
             <img src="images/victor-emmanuel-rome.jpg" width = "400" alt="victor-emmanuel-rome">
             <p>An ornate marble building with bronze statues of angels and chariots, and the Italian flag on either side.</p>
             <!-- Frank Pelosi -->
-        </div>
-        <div>
-            <h2>Lake Tahoe</h2>
+            </div>
+            <div class="item">
+                <h2>Lake Tahoe</h2>
             <img src="images/nature-river.gif" width = "400" alt="nature-river">
             <img src="images/laketahoe.jpeg" width = "400" alt="laketahoe">
             <h3>Geographical Location: North America</h3>
@@ -59,9 +61,9 @@
             <img src="images/Hikers_watching_sunset.jpg" width = "400" alt="Hikers_watching_sunset">
             <p>Hikers watching sunset</p>
             <!-- Catherine Zhou & Hellen Tong -->
-        </div>
-        <div>
-            <h2>LA</h2>
+            </div>
+            <div class="item">
+                <h2>LA</h2>
             <img src="images/los-angeles-california-bustle.gif" width = "400" alt="los-angeles-california-bustle">
             <img src="images/los_angeles.jpeg" width = "400" alt="los_angeles">
             <h3>Geographical Location: North America</h3>
@@ -79,6 +81,7 @@
             <img src="images/houses_hill.jpeg" width = "400" alt="houses_hill">
             <p>View of Houses on a Hill on Highland Ave, Los Angeles, California, USA</p>
             <!-- Iris Sirui Wang & Sue Yixin Wang -->
+            </div>
         </div>
     </main>
 </body>

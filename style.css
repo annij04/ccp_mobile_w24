@@ -1,0 +1,88 @@
+
+body {
+    background-color: #e4e3dc;
+    color: #2F4858;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #8A3528;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: transparent;
+    color: grey;
+}
+
+.skip-main {
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: #51514D;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.skip-main:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.item {
+    display: grid;
+    border: 5px solid #8A3528;
+    padding: 15px;
+
+  }
+
+
+.item img, video {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: auto; /* Adjust row size as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* Styles to apply when motion is reduced */
+    /* For example, you might want to disable or minimize animations */
+    * {
+        transition-duration: 0.001ms !important;
+        animation-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    #skip {
+        display: none;
+    }
+}
